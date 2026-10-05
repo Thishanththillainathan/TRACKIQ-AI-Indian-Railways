@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-06T15:02:10.196Z",
+  "sourceFile": "indian_railways_master.xlsx",
+  "checks": {},
+  "errors": [
+    "Table 'tmd_assets' Batch 1 (Rows 1-500) FAILED: TypeError: fetch failed"
+  ]
+}

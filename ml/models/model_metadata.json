@@ -1,0 +1,1071 @@
+{
+  "timestamp": "2026-09-08T09:41:45.691735",
+  "version": "2.0-scientific-improvement",
+  "tms_model": {
+    "model_name": "TMS Actual Duration Predictor",
+    "system": "TMS (Track Management System)",
+    "task": "Regression",
+    "target": "Actual Duration",
+    "selected_model": "LinearRegression",
+    "total_rows": 47527,
+    "train_rows": 38021,
+    "test_rows": 9506,
+    "train_period": "2026-02-01 to 2026-07-25",
+    "test_period": "2026-07-25 to 2026-09-07",
+    "features": [
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division",
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay"
+    ],
+    "categorical_features": [
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division"
+    ],
+    "numerical_features": [
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay"
+    ],
+    "metrics": {
+      "MAE": 2.5995,
+      "RMSE": 5.5775,
+      "R2": 0.9658,
+      "Mean_Error": -0.0204,
+      "Worst_Errors": [
+        {
+          "actual": 297.6,
+          "predicted": 244.19,
+          "error": -53.41
+        },
+        {
+          "actual": 255.2,
+          "predicted": 203.37,
+          "error": -51.83
+        },
+        {
+          "actual": 132.7,
+          "predicted": 183.06,
+          "error": 50.36
+        },
+        {
+          "actual": 242.3,
+          "predicted": 192.39,
+          "error": -49.91
+        },
+        {
+          "actual": 129.6,
+          "predicted": 178.95,
+          "error": 49.35
+        }
+      ]
+    },
+    "all_model_comparisons": {
+      "LinearRegression": {
+        "train": {
+          "MAE": 2.6053,
+          "RMSE": 5.6106,
+          "R2": 0.9641,
+          "Mean_Error": 0.0,
+          "Worst_Errors": [
+            {
+              "actual": 175.3,
+              "predicted": 242.36,
+              "error": 67.06
+            },
+            {
+              "actual": 174.7,
+              "predicted": 233.03,
+              "error": 58.33
+            },
+            {
+              "actual": 150.6,
+              "predicted": 207.74,
+              "error": 57.14
+            },
+            {
+              "actual": 179.2,
+              "predicted": 235.9,
+              "error": 56.7
+            },
+            {
+              "actual": 267.3,
+              "predicted": 211.88,
+              "error": -55.42
+            }
+          ]
+        },
+        "test": {
+          "MAE": 2.5995,
+          "RMSE": 5.5775,
+          "R2": 0.9658,
+          "Mean_Error": -0.0204,
+          "Worst_Errors": [
+            {
+              "actual": 297.6,
+              "predicted": 244.19,
+              "error": -53.41
+            },
+            {
+              "actual": 255.2,
+              "predicted": 203.37,
+              "error": -51.83
+            },
+            {
+              "actual": 132.7,
+              "predicted": 183.06,
+              "error": 50.36
+            },
+            {
+              "actual": 242.3,
+              "predicted": 192.39,
+              "error": -49.91
+            },
+            {
+              "actual": 129.6,
+              "predicted": 178.95,
+              "error": 49.35
+            }
+          ]
+        }
+      },
+      "RandomForestRegressor": {
+        "train": {
+          "MAE": 1.787,
+          "RMSE": 3.4953,
+          "R2": 0.9861,
+          "Mean_Error": -0.001,
+          "Worst_Errors": [
+            {
+              "actual": 169.8,
+              "predicted": 203.75,
+              "error": 33.95
+            },
+            {
+              "actual": 267.3,
+              "predicted": 237.63,
+              "error": -29.67
+            },
+            {
+              "actual": 155.5,
+              "predicted": 185.01,
+              "error": 29.51
+            },
+            {
+              "actual": 228.6,
+              "predicted": 199.61,
+              "error": -28.99
+            },
+            {
+              "actual": 191.6,
+              "predicted": 163.13,
+              "error": -28.47
+            }
+          ]
+        },
+        "test": {
+          "MAE": 2.6166,
+          "RMSE": 5.8483,
+          "R2": 0.9624,
+          "Mean_Error": -0.0383,
+          "Worst_Errors": [
+            {
+              "actual": 297.6,
+              "predicted": 206.35,
+              "error": -91.25
+            },
+            {
+              "actual": 287.1,
+              "predicted": 199.07,
+              "error": -88.03
+            },
+            {
+              "actual": 132.7,
+              "predicted": 192.96,
+              "error": 60.26
+            },
+            {
+              "actual": 255.2,
+              "predicted": 198.82,
+              "error": -56.38
+            },
+            {
+              "actual": 129.6,
+              "predicted": 183.72,
+              "error": 54.12
+            }
+          ]
+        }
+      },
+      "HistGradientBoostingRegressor": {
+        "train": {
+          "MAE": 2.4283,
+          "RMSE": 5.0662,
+          "R2": 0.9708,
+          "Mean_Error": -0.0084,
+          "Worst_Errors": [
+            {
+              "actual": 129.1,
+              "predicted": 205.15,
+              "error": 76.05
+            },
+            {
+              "actual": 269.9,
+              "predicted": 202.29,
+              "error": -67.61
+            },
+            {
+              "actual": 256.9,
+              "predicted": 194.84,
+              "error": -62.06
+            },
+            {
+              "actual": 256.6,
+              "predicted": 196.68,
+              "error": -59.92
+            },
+            {
+              "actual": 236.1,
+              "predicted": 176.25,
+              "error": -59.85
+            }
+          ]
+        },
+        "test": {
+          "MAE": 2.6464,
+          "RMSE": 6.105,
+          "R2": 0.959,
+          "Mean_Error": -0.0354,
+          "Worst_Errors": [
+            {
+              "actual": 297.6,
+              "predicted": 182.55,
+              "error": -115.05
+            },
+            {
+              "actual": 287.1,
+              "predicted": 175.84,
+              "error": -111.26
+            },
+            {
+              "actual": 242.3,
+              "predicted": 174.09,
+              "error": -68.21
+            },
+            {
+              "actual": 132.7,
+              "predicted": 197.01,
+              "error": 64.31
+            },
+            {
+              "actual": 236.4,
+              "predicted": 173.53,
+              "error": -62.87
+            }
+          ]
+        }
+      }
+    },
+    "error_breakdowns": {
+      "by_duration_bracket": {
+        "High (>10h)": {
+          "mean": 6.568518427994459,
+          "median": 3.777982775085981,
+          "count": 2887
+        },
+        "Low (<4h)": {
+          "mean": 0.5778789450896961,
+          "median": 0.5134857287637891,
+          "count": 2788
+        },
+        "Medium (4-10h)": {
+          "mean": 1.0796878068265934,
+          "median": 0.9853511100320187,
+          "count": 3831
+        }
+      },
+      "by_work_type": {
+        "Corrective Repair": {
+          "mean": 2.9043915124641053,
+          "median": 1.1347377901545053,
+          "count": 2848
+        },
+        "Emergency Restoration": {
+          "mean": 2.796618688284559,
+          "median": 1.1230168016313264,
+          "count": 571
+        },
+        "Overhauling": {
+          "mean": 2.4667481780571543,
+          "median": 1.036095938001313,
+          "count": 654
+        },
+        "Preventive Maintenance": {
+          "mean": 2.0201577126848473,
+          "median": 0.8282960858272883,
+          "count": 1983
+        },
+        "Renewal / Replacement": {
+          "mean": 2.8660545927988132,
+          "median": 1.0936650334612943,
+          "count": 1388
+        },
+        "Special Inspection & Testing": {
+          "mean": 2.170719099448849,
+          "median": 0.8438275577189334,
+          "count": 933
+        },
+        "Upgradation / Modernisation": {
+          "mean": 2.851688346041221,
+          "median": 1.183439854642304,
+          "count": 1129
+        }
+      },
+      "by_traffic_density": {
+        "High (120-200 trains/day)": {
+          "mean": 2.602654478435425,
+          "median": 1.0227826666680713,
+          "count": 2995
+        },
+        "Low (<60 trains/day)": {
+          "mean": 2.490926048862439,
+          "median": 1.009185264600065,
+          "count": 1355
+        },
+        "Medium (60-120 trains/day)": {
+          "mean": 2.8624013232132857,
+          "median": 1.0891740794822184,
+          "count": 2164
+        },
+        "Very High (>200 trains/day)": {
+          "mean": 2.4553247880770392,
+          "median": 0.9819593725738511,
+          "count": 2992
+        }
+      }
+    },
+    "file_path": "ml\\models\\tms_actual_duration_model.joblib"
+  },
+  "smms_model": {
+    "model_name": "SMMS S&T Failure Severity Risk Predictor",
+    "system": "SMMS (Signal & Telecom System)",
+    "task": "Binary Classification",
+    "target": "High_Failure_Risk",
+    "target_definition": "1 = High Failure Risk (Major/Critical S&T Failure), 0 = Low/Moderate Risk (Minor/Moderate)",
+    "class_distribution_percentages": {
+      "0": 69.12832100794303,
+      "1": 30.87167899205697
+    },
+    "selected_model": "RandomForestClassifier",
+    "total_rows": 29208,
+    "train_rows": 23366,
+    "test_rows": 5842,
+    "train_period": "2026-02-01 to 2026-07-26",
+    "test_period": "2026-07-26 to 2026-09-07",
+    "features": [
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division",
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay"
+    ],
+    "categorical_features": [
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division"
+    ],
+    "numerical_features": [
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay"
+    ],
+    "metrics": {
+      "Accuracy": 0.982,
+      "Precision": 0.9825,
+      "Recall": 0.982,
+      "F1": 0.9819,
+      "Macro_F1": 0.9789,
+      "ROC_AUC": 0.9957,
+      "Confusion_Matrix": [
+        [
+          3987,
+          0
+        ],
+        [
+          105,
+          1750
+        ]
+      ],
+      "Per_Class_Metrics": {
+        "0": {
+          "precision": 0.9743,
+          "recall": 1.0,
+          "f1-score": 0.987,
+          "support": 3987.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9434,
+          "f1-score": 0.9709,
+          "support": 1855.0
+        }
+      }
+    },
+    "all_model_comparisons": {
+      "LogisticRegression": {
+        "train": {
+          "Accuracy": 0.9663,
+          "Precision": 0.9663,
+          "Recall": 0.9663,
+          "F1": 0.9663,
+          "Macro_F1": 0.9604,
+          "ROC_AUC": null,
+          "Confusion_Matrix": [
+            [
+              15796,
+              408
+            ],
+            [
+              380,
+              6782
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9765,
+              "recall": 0.9748,
+              "f1-score": 0.9757,
+              "support": 16204.0
+            },
+            "1": {
+              "precision": 0.9433,
+              "recall": 0.9469,
+              "f1-score": 0.9451,
+              "support": 7162.0
+            }
+          }
+        },
+        "test": {
+          "Accuracy": 0.9639,
+          "Precision": 0.9642,
+          "Recall": 0.9639,
+          "F1": 0.964,
+          "Macro_F1": 0.9586,
+          "ROC_AUC": 0.989,
+          "Confusion_Matrix": [
+            [
+              3862,
+              125
+            ],
+            [
+              86,
+              1769
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9782,
+              "recall": 0.9686,
+              "f1-score": 0.9734,
+              "support": 3987.0
+            },
+            "1": {
+              "precision": 0.934,
+              "recall": 0.9536,
+              "f1-score": 0.9437,
+              "support": 1855.0
+            }
+          }
+        }
+      },
+      "RandomForestClassifier": {
+        "train": {
+          "Accuracy": 0.9791,
+          "Precision": 0.9797,
+          "Recall": 0.9791,
+          "F1": 0.9789,
+          "Macro_F1": 0.9749,
+          "ROC_AUC": null,
+          "Confusion_Matrix": [
+            [
+              16204,
+              0
+            ],
+            [
+              489,
+              6673
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9707,
+              "recall": 1.0,
+              "f1-score": 0.9851,
+              "support": 16204.0
+            },
+            "1": {
+              "precision": 1.0,
+              "recall": 0.9317,
+              "f1-score": 0.9647,
+              "support": 7162.0
+            }
+          }
+        },
+        "test": {
+          "Accuracy": 0.982,
+          "Precision": 0.9825,
+          "Recall": 0.982,
+          "F1": 0.9819,
+          "Macro_F1": 0.9789,
+          "ROC_AUC": 0.9957,
+          "Confusion_Matrix": [
+            [
+              3987,
+              0
+            ],
+            [
+              105,
+              1750
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9743,
+              "recall": 1.0,
+              "f1-score": 0.987,
+              "support": 3987.0
+            },
+            "1": {
+              "precision": 1.0,
+              "recall": 0.9434,
+              "f1-score": 0.9709,
+              "support": 1855.0
+            }
+          }
+        }
+      },
+      "HistGradientBoostingClassifier": {
+        "train": {
+          "Accuracy": 0.9866,
+          "Precision": 0.9865,
+          "Recall": 0.9866,
+          "F1": 0.9865,
+          "Macro_F1": 0.9842,
+          "ROC_AUC": null,
+          "Confusion_Matrix": [
+            [
+              16077,
+              127
+            ],
+            [
+              187,
+              6975
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9885,
+              "recall": 0.9922,
+              "f1-score": 0.9903,
+              "support": 16204.0
+            },
+            "1": {
+              "precision": 0.9821,
+              "recall": 0.9739,
+              "f1-score": 0.978,
+              "support": 7162.0
+            }
+          }
+        },
+        "test": {
+          "Accuracy": 0.9735,
+          "Precision": 0.9734,
+          "Recall": 0.9735,
+          "F1": 0.9734,
+          "Macro_F1": 0.9693,
+          "ROC_AUC": 0.9963,
+          "Confusion_Matrix": [
+            [
+              3922,
+              65
+            ],
+            [
+              90,
+              1765
+            ]
+          ],
+          "Per_Class_Metrics": {
+            "0": {
+              "precision": 0.9776,
+              "recall": 0.9837,
+              "f1-score": 0.9806,
+              "support": 3987.0
+            },
+            "1": {
+              "precision": 0.9645,
+              "recall": 0.9515,
+              "f1-score": 0.9579,
+              "support": 1855.0
+            }
+          }
+        }
+      }
+    },
+    "legacy_target_audit_metrics": {
+      "Accuracy": 0.3651,
+      "Precision": 0.3744,
+      "Recall": 0.3651,
+      "F1": 0.3676,
+      "Macro_F1": 0.3606,
+      "ROC_AUC": null,
+      "Confusion_Matrix": [
+        [
+          1899,
+          1670,
+          1565
+        ],
+        [
+          2635,
+          3366,
+          3022
+        ],
+        [
+          2196,
+          2879,
+          2768
+        ]
+      ],
+      "Per_Class_Metrics": {
+        "0": {
+          "precision": 0.2822,
+          "recall": 0.3699,
+          "f1-score": 0.3201,
+          "support": 5134.0
+        },
+        "1": {
+          "precision": 0.4253,
+          "recall": 0.373,
+          "f1-score": 0.3974,
+          "support": 9023.0
+        },
+        "2": {
+          "precision": 0.3763,
+          "recall": 0.3529,
+          "f1-score": 0.3643,
+          "support": 7843.0
+        }
+      }
+    },
+    "file_path": "ml\\models\\smms_asset_condition_model.joblib"
+  },
+  "trd_model": {
+    "model_name": "TRD Affected Trains Disruption Predictor",
+    "system": "TRD (Traction Distribution System)",
+    "task": "Count Regression",
+    "target": "Affected Trains",
+    "selected_model": "HistGradientBoostingRegressor",
+    "total_rows": 17954,
+    "train_rows": 14363,
+    "test_rows": 3591,
+    "train_period": "2026-02-01 to 2026-07-26",
+    "test_period": "2026-07-26 to 2026-09-07",
+    "features": [
+      "Block Type",
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division",
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay",
+      "Traffic_Exposed_Trains",
+      "Delay_Per_Train",
+      "High_Traffic_Flag"
+    ],
+    "categorical_features": [
+      "Block Type",
+      "Station",
+      "Work Type",
+      "Traffic Density",
+      "Priority",
+      "Zone",
+      "Division"
+    ],
+    "numerical_features": [
+      "Planned Duration",
+      "Train Frequency",
+      "Scheduled Trains",
+      "Previous Delay",
+      "Traffic_Exposed_Trains",
+      "Delay_Per_Train",
+      "High_Traffic_Flag"
+    ],
+    "metrics": {
+      "MAE": 7.5924,
+      "RMSE": 14.4735,
+      "R2": 0.7323,
+      "Mean_Error": -0.0968,
+      "Worst_Errors": [
+        {
+          "actual": 246.0,
+          "predicted": 73.13,
+          "error": -172.87
+        },
+        {
+          "actual": 212.0,
+          "predicted": 59.68,
+          "error": -152.32
+        },
+        {
+          "actual": 208.0,
+          "predicted": 60.26,
+          "error": -147.74
+        },
+        {
+          "actual": 189.0,
+          "predicted": 54.89,
+          "error": -134.11
+        },
+        {
+          "actual": 176.0,
+          "predicted": 47.68,
+          "error": -128.32
+        }
+      ]
+    },
+    "all_model_comparisons": {
+      "LinearRegression": {
+        "train": {
+          "MAE": 10.0143,
+          "RMSE": 18.1085,
+          "R2": 0.5722,
+          "Mean_Error": 0.0,
+          "Worst_Errors": [
+            {
+              "actual": 267.0,
+              "predicted": 92.61,
+              "error": -174.39
+            },
+            {
+              "actual": 261.0,
+              "predicted": 91.78,
+              "error": -169.22
+            },
+            {
+              "actual": 259.0,
+              "predicted": 96.11,
+              "error": -162.89
+            },
+            {
+              "actual": 34.0,
+              "predicted": 179.1,
+              "error": 145.1
+            },
+            {
+              "actual": 231.0,
+              "predicted": 86.04,
+              "error": -144.96
+            }
+          ]
+        },
+        "test": {
+          "MAE": 10.0182,
+          "RMSE": 18.1682,
+          "R2": 0.5782,
+          "Mean_Error": -0.147,
+          "Worst_Errors": [
+            {
+              "actual": 268.0,
+              "predicted": 109.49,
+              "error": -158.51
+            },
+            {
+              "actual": 212.0,
+              "predicted": 57.65,
+              "error": -154.35
+            },
+            {
+              "actual": 246.0,
+              "predicted": 96.51,
+              "error": -149.49
+            },
+            {
+              "actual": 221.0,
+              "predicted": 72.27,
+              "error": -148.73
+            },
+            {
+              "actual": 244.0,
+              "predicted": 97.29,
+              "error": -146.71
+            }
+          ]
+        }
+      },
+      "PoissonRegressor": {
+        "train": {
+          "MAE": 8.9226,
+          "RMSE": 17.6718,
+          "R2": 0.5926,
+          "Mean_Error": -0.0001,
+          "Worst_Errors": [
+            {
+              "actual": 34.0,
+              "predicted": 312.6,
+              "error": 278.6
+            },
+            {
+              "actual": 28.0,
+              "predicted": 289.61,
+              "error": 261.61
+            },
+            {
+              "actual": 47.0,
+              "predicted": 269.22,
+              "error": 222.22
+            },
+            {
+              "actual": 247.0,
+              "predicted": 464.8,
+              "error": 217.8
+            },
+            {
+              "actual": 64.0,
+              "predicted": 278.35,
+              "error": 214.35
+            }
+          ]
+        },
+        "test": {
+          "MAE": 8.665,
+          "RMSE": 17.031,
+          "R2": 0.6294,
+          "Mean_Error": -0.2368,
+          "Worst_Errors": [
+            {
+              "actual": 83.0,
+              "predicted": 402.34,
+              "error": 319.34
+            },
+            {
+              "actual": 212.0,
+              "predicted": 48.77,
+              "error": -163.23
+            },
+            {
+              "actual": 246.0,
+              "predicted": 97.61,
+              "error": -148.39
+            },
+            {
+              "actual": 59.0,
+              "predicted": 204.09,
+              "error": 145.09
+            },
+            {
+              "actual": 181.0,
+              "predicted": 36.0,
+              "error": -145.0
+            }
+          ]
+        }
+      },
+      "RandomForestRegressor": {
+        "train": {
+          "MAE": 4.6588,
+          "RMSE": 7.8326,
+          "R2": 0.92,
+          "Mean_Error": -0.1326,
+          "Worst_Errors": [
+            {
+              "actual": 267.0,
+              "predicted": 194.51,
+              "error": -72.49
+            },
+            {
+              "actual": 169.0,
+              "predicted": 100.6,
+              "error": -68.4
+            },
+            {
+              "actual": 261.0,
+              "predicted": 193.45,
+              "error": -67.55
+            },
+            {
+              "actual": 170.0,
+              "predicted": 104.44,
+              "error": -65.56
+            },
+            {
+              "actual": 259.0,
+              "predicted": 197.05,
+              "error": -61.95
+            }
+          ]
+        },
+        "test": {
+          "MAE": 7.3777,
+          "RMSE": 14.5176,
+          "R2": 0.7307,
+          "Mean_Error": -0.2464,
+          "Worst_Errors": [
+            {
+              "actual": 246.0,
+              "predicted": 86.05,
+              "error": -159.95
+            },
+            {
+              "actual": 189.0,
+              "predicted": 33.1,
+              "error": -155.9
+            },
+            {
+              "actual": 212.0,
+              "predicted": 56.6,
+              "error": -155.4
+            },
+            {
+              "actual": 208.0,
+              "predicted": 56.49,
+              "error": -151.51
+            },
+            {
+              "actual": 194.0,
+              "predicted": 50.29,
+              "error": -143.71
+            }
+          ]
+        }
+      },
+      "HistGradientBoostingRegressor": {
+        "train": {
+          "MAE": 7.0447,
+          "RMSE": 12.5854,
+          "R2": 0.7933,
+          "Mean_Error": 0.015,
+          "Worst_Errors": [
+            {
+              "actual": 267.0,
+              "predicted": 106.97,
+              "error": -160.03
+            },
+            {
+              "actual": 259.0,
+              "predicted": 117.26,
+              "error": -141.74
+            },
+            {
+              "actual": 168.0,
+              "predicted": 35.94,
+              "error": -132.06
+            },
+            {
+              "actual": 170.0,
+              "predicted": 41.57,
+              "error": -128.43
+            },
+            {
+              "actual": 261.0,
+              "predicted": 134.46,
+              "error": -126.54
+            }
+          ]
+        },
+        "test": {
+          "MAE": 7.5924,
+          "RMSE": 14.4735,
+          "R2": 0.7323,
+          "Mean_Error": -0.0968,
+          "Worst_Errors": [
+            {
+              "actual": 246.0,
+              "predicted": 73.13,
+              "error": -172.87
+            },
+            {
+              "actual": 212.0,
+              "predicted": 59.68,
+              "error": -152.32
+            },
+            {
+              "actual": 208.0,
+              "predicted": 60.26,
+              "error": -147.74
+            },
+            {
+              "actual": 189.0,
+              "predicted": 54.89,
+              "error": -134.11
+            },
+            {
+              "actual": 176.0,
+              "predicted": 47.68,
+              "error": -128.32
+            }
+          ]
+        }
+      }
+    },
+    "error_breakdowns": {
+      "by_traffic_density": {
+        "High (120-200 trains/day)": {
+          "mean": 7.449119862148291,
+          "median": 3.3165848476455757,
+          "count": 1089
+        },
+        "Low (<60 trains/day)": {
+          "mean": 3.4578656069173066,
+          "median": 2.370510427161755,
+          "count": 485
+        },
+        "Medium (60-120 trains/day)": {
+          "mean": 6.468835466680921,
+          "median": 3.8124515975071693,
+          "count": 811
+        },
+        "Very High (>200 trains/day)": {
+          "mean": 10.140209244728123,
+          "median": 4.038004654577227,
+          "count": 1206
+        }
+      },
+      "by_block_type": {
+        "Traction (OHE) Block": {
+          "mean": 5.502461030440535,
+          "median": 3.0175716493626705,
+          "count": 2789
+        },
+        "Traction Power Block": {
+          "mean": 14.860486842837998,
+          "median": 6.663675733239964,
+          "count": 802
+        }
+      }
+    },
+    "file_path": "ml\\models\\trd_affected_trains_model.joblib"
+  }
+}

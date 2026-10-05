@@ -1,0 +1,67 @@
+{
+  "import_timestamp": "2026-09-06T15:04:03.405Z",
+  "source_file": "indian_railways_master.xlsx",
+  "source_row_counts": {
+    "tmd_assets": 16250,
+    "st_assets": 16250,
+    "trd_assets": 16250,
+    "department_machines": 16250,
+    "historical_records": 16250
+  },
+  "inserted_counts": {
+    "tmd_assets": 16250,
+    "st_assets": 16250,
+    "trd_assets": 16250,
+    "department_machines": 16250,
+    "historical_records": 16250
+  },
+  "updated_counts": {},
+  "failed_counts": {
+    "tmd_assets": 0,
+    "st_assets": 0,
+    "trd_assets": 0,
+    "department_machines": 0,
+    "historical_records": 0
+  },
+  "initial_db_counts": {
+    "tmd_assets": 16300,
+    "st_assets": 16290,
+    "trd_assets": 16432,
+    "department_machines": 16327,
+    "historical_records": 54
+  },
+  "final_db_counts": {
+    "tmd_assets": 16300,
+    "st_assets": 16290,
+    "trd_assets": 16432,
+    "department_machines": 16327,
+    "historical_records": 16304
+  },
+  "tmd_duplicate_stats": {
+    "source_rows": 16250,
+    "generated_codes": 16250,
+    "collisions_resolved": 171
+  },
+  "station_fk_stats": {
+    "tmd": {
+      "valid": 0,
+      "null": 16250,
+      "invalid": 0
+    },
+    "st": {
+      "valid": 258,
+      "null": 15992,
+      "invalid": 0
+    },
+    "trd": {
+      "valid": 0,
+      "null": 16250,
+      "invalid": 0
+    },
+    "machines": {
+      "valid": 0,
+      "null": 16250,
+      "invalid": 0
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Environment files & Secrets
+.env
+.env.*
+!.env.example
+!backend/.env.example
+
+# Byte-compiled / Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases & local storage
+*.db
+*.sqlite
+*.sqlite3
+railway.db
+railway_data.db
+
+# Large generated indexed datasets (>100MB per file)
+src/data/department_datasets/
+department_datasets/
+
+# Build & Dependency Directories
+node_modules/
+dist/
+build/
+.cache/
+.oxlintrc_cache/
+.gemini/
+
+# Scratch, Logs, Temporary files
+scratch/
+learning_logs/
+New folder/
+*.log
+backend_startup_*.txt

@@ -1,0 +1,7 @@
+{
+  "model_type": "IntentClassificationMLP",
+  "intents_count": 23,
+  "confidence_threshold": 0.45,
+  "status": "TRAINED",
+  "version": "v1.0.0"
+}

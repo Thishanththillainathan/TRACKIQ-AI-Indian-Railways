@@ -1,0 +1,1 @@
+﻿import openpyxl, os; os.chdir(r'c:\Users\THISHANTH T\Desktop\PROTOTYPE'); wb=openpyxl.load_workbook('ml/data/Track_Management_Department.xlsx',read_only=True,data_only=True); print('sheets:',wb.sheetnames); wb.close(); print('OK')

@@ -1,0 +1,502 @@
+[
+  {
+    "text": "Hello",
+    "intent": "greeting",
+    "response": "Hello! I am TRACKIQ AI Assistant for Indian Railways maintenance block planning. How can I help you today?"
+  },
+  {
+    "text": "Hi there",
+    "intent": "greeting",
+    "response": "Greetings! I am ready to assist with your railway maintenance, AI block planning, and schedule queries."
+  },
+  {
+    "text": "Good morning",
+    "intent": "greeting",
+    "response": "Good morning! How can I assist you with maintenance requests or block schedules today?"
+  },
+  {
+    "text": "Hey assistant",
+    "intent": "greeting",
+    "response": "Hello! I am your AI assistant for Indian Railways operations. Ask me about blocks, assets, or predictions."
+  },
+  {
+    "text": "What can you do?",
+    "intent": "help",
+    "response": "I assist with 12 modules: Maintenance, Engineering, Operations, ML Predictions, AI Block Planner, Block Schedule, Self-Learning AI, Digital Twin, Approvals, Execution, Analytics, and System Monitoring."
+  },
+  {
+    "text": "How do I use this system?",
+    "intent": "help",
+    "response": "You can navigate via the sidebar to inspect department maintenance requests, generate AI block schedules, approve workflow requests, or view the Digital Twin asset states."
+  },
+  {
+    "text": "Give me help",
+    "intent": "help",
+    "response": "I can answer questions regarding block schedules, asset health scores, ML delay predictions, and execution monitoring. What topic do you need help with?"
+  },
+  {
+    "text": "Is the system running?",
+    "intent": "system_status",
+    "response": "The TRACKIQ TWIN system and backend API are operational. All 340,000 dataset records are loaded and available."
+  },
+  {
+    "text": "Check system health",
+    "intent": "system_status",
+    "response": "System health is normal. Backend endpoints, ML prediction models, and Supabase database connections are healthy."
+  },
+  {
+    "text": "Show system monitor status",
+    "intent": "system_status",
+    "response": "Backend services are online. You can view full real-time API latency and database metrics on the System Monitor page."
+  },
+  {
+    "text": "Tell me about maintenance requests",
+    "intent": "maintenance",
+    "response": "The Maintenance module contains 110,000 records covering routine inspection, tamping, OHE servicing, and asset failure history across Indian Railways zones."
+  },
+  {
+    "text": "What is in the maintenance dataset?",
+    "intent": "maintenance",
+    "response": "The Maintenance dataset includes asset IDs, maintenance types, repair durations, asset ages, problem types, downtime, and failure severities."
+  },
+  {
+    "text": "How do I submit a maintenance request?",
+    "intent": "maintenance",
+    "response": "Go to the Maintenance Requests page, fill in department details, asset code, required duration, and safety criticality, then click Submit."
+  },
+  {
+    "text": "What is the Engineering module?",
+    "intent": "engineering",
+    "response": "The Engineering module contains 125,000 track and civil engineering maintenance records, including rail replacements, ballast cleaning, and technician counts."
+  },
+  {
+    "text": "Show engineering workload",
+    "intent": "engineering",
+    "response": "Engineering workload includes track tamping, rail grinding, turnout renewals, and bridge inspections across division sections."
+  },
+  {
+    "text": "How are manpower resources assigned for engineering?",
+    "intent": "engineering",
+    "response": "Technician and manpower allocations are calculated dynamically based on work type, equipment availability, and department historical baselines."
+  },
+  {
+    "text": "What is in the Operations dataset?",
+    "intent": "operations",
+    "response": "The Operations dataset contains 105,000 records tracking train frequency, traffic density, scheduled trains, and affected train diverted counts."
+  },
+  {
+    "text": "How does traffic density affect block planning?",
+    "intent": "operations",
+    "response": "Higher traffic density increases train congestion risk. The AI Planner recommends scheduling possession blocks during low-density off-peak windows."
+  },
+  {
+    "text": "What operations data is tracked?",
+    "intent": "operations",
+    "response": "Operations tracks train frequencies, section line speed limits, passenger vs freight splits, and diversion impact on scheduled express trains."
+  },
+  {
+    "text": "How do ML predictions work?",
+    "intent": "ml_prediction",
+    "response": "We use Random Forest and XGBoost models trained on 340,000 historical records to predict block duration delays, risk scores, and section congestion."
+  },
+  {
+    "text": "What is the predicted delay for a block?",
+    "intent": "ml_prediction",
+    "response": "ML delay prediction evaluates work type, planned duration, traffic density, and technician count to estimate delay risk in minutes."
+  },
+  {
+    "text": "How accurate are the ML models?",
+    "intent": "ml_prediction",
+    "response": "The ML models achieve 96.5% confidence across delay and risk evaluation metrics validated against historical execution logs."
+  },
+  {
+    "text": "What is the AI Block Planner?",
+    "intent": "ai_planner",
+    "response": "The AI Block Planner evaluates 10 hard constraints across S&T, Track, and OHE requests to generate optimal multi-department block schedules."
+  },
+  {
+    "text": "How does the AI Planner resolve conflicts?",
+    "intent": "ai_planner",
+    "response": "The AI Planner identifies spatial/temporal overlaps and merges concurrent department maintenance requests into single joint possession windows."
+  },
+  {
+    "text": "What hard constraints does the planner check?",
+    "intent": "ai_planner",
+    "response": "The 10 hard constraints include asset availability, train schedule alignment, off-peak traffic density, allowed start/end windows, max duration, and technician availability."
+  },
+  {
+    "text": "What is the Block Schedule module?",
+    "intent": "block_schedule",
+    "response": "The Block Schedule module displays approved possession windows with an exact 26-field dataset contract categorized under 5 UI sections."
+  },
+  {
+    "text": "How many fields are in the block schedule?",
+    "intent": "block_schedule",
+    "response": "The Block Schedule integration adheres to an exact 26-field contract covering Block Info, Schedule, Resources, Operations, and Delay/Exceptions."
+  },
+  {
+    "text": "Can I filter block schedules by department?",
+    "intent": "block_schedule",
+    "response": "Yes, you can filter block schedules by department (SMMS/S&T, TMS/Track, TRD/Traction) or view all consolidated multi-department blocks."
+  },
+  {
+    "text": "What is Digital Twin?",
+    "intent": "digital_twin",
+    "response": "The Digital Twin provides a 24-field spatial representation of stations, tracks, assets, and active maintenance blocks across Indian Railways corridors."
+  },
+  {
+    "text": "Does Digital Twin show live train GPS?",
+    "intent": "digital_twin",
+    "response": "No, real-time train GPS positional feeds and live hardware signal relay aspects are not connected to static Excel files. Static & workflow-derived data are clearly distinguished."
+  },
+  {
+    "text": "What data is in Digital Twin?",
+    "intent": "digital_twin",
+    "response": "Digital Twin combines static reference data (Station ID, Route, Asset ID), workflow-derived state (Block Status, Active Work), and system timestamps."
+  },
+  {
+    "text": "What is Self-Learning AI?",
+    "intent": "self_learning",
+    "response": "Self-Learning AI analyzes variances between planned block durations and actual execution outcomes, automatically updating AI Planner weights."
+  },
+  {
+    "text": "How does the self learning loop work?",
+    "intent": "self_learning",
+    "response": "When a block completes, actual duration and delay minutes are compared against initial plans to refine future duration recommendations."
+  },
+  {
+    "text": "Show learning analytics summary",
+    "intent": "self_learning",
+    "response": "Learning Analytics displays historical performance trends, root cause classifications, and automated recommendation adjustment windows."
+  },
+  {
+    "text": "Tell me about railway assets",
+    "intent": "asset",
+    "response": "Assets include Point Machines, Track Sections, OHE Cantilevers, Signals, and Tamping Machines, indexed by unique Asset IDs and health scores."
+  },
+  {
+    "text": "How is asset availability updated?",
+    "intent": "asset",
+    "response": "Asset status changes to UNDER_MAINTENANCE when execution starts, and automatically returns to AVAILABLE upon maintenance completion."
+  },
+  {
+    "text": "Show asset health score",
+    "intent": "asset",
+    "response": "Asset health scores range from 0 to 100% based on age, failure history, days since last maintenance, and usage hours."
+  },
+  {
+    "text": "Tell me about train operations",
+    "intent": "train",
+    "response": "Train operations track passenger express and freight movement, section max speed limits, and diversion plans during possession blocks."
+  },
+  {
+    "text": "How are trains affected by maintenance?",
+    "intent": "train",
+    "response": "During active maintenance blocks, trains may be diverted, single-line working enforced, or held at outer signals to preserve safety."
+  },
+  {
+    "text": "What is a block possession?",
+    "intent": "block",
+    "response": "A block possession is a granted time window where train movement is restricted or halted so engineering crews can perform safe track maintenance."
+  },
+  {
+    "text": "What is an active block?",
+    "intent": "block",
+    "response": "An active block is a scheduled maintenance window currently IN_PROGRESS with work crews assigned and track isolated for safety."
+  },
+  {
+    "text": "How is block duration calculated?",
+    "intent": "block",
+    "response": "Planned duration is based on work type requirements, historical baselines, and maximum allowed section window constraints."
+  },
+  {
+    "text": "How to get a delay prediction?",
+    "intent": "prediction",
+    "response": "You can request delay predictions by selecting station, department, work type, and planned duration on the ML Predictions page."
+  },
+  {
+    "text": "What is congestion prediction?",
+    "intent": "prediction",
+    "response": "Congestion prediction estimates section train density risk (Low, Medium, High) during proposed maintenance windows."
+  },
+  {
+    "text": "How is approval workflow handled?",
+    "intent": "approval",
+    "response": "Requested maintenance blocks require multi-stage approval from Senior Divisional Engineers (Sr. DEN), Sr. DSTE, or Sr. DEE before scheduling."
+  },
+  {
+    "text": "Can a block be rejected?",
+    "intent": "approval",
+    "response": "Yes, officers can reject block requests with explicit rejection reasons, which prevents the block from proceeding to schedule or execution."
+  },
+  {
+    "text": "How is execution monitored?",
+    "intent": "execution",
+    "response": "Execution Monitor tracks active blocks in real time, recording actual start/end timestamps, progress percentage, work crews, and actual delays."
+  },
+  {
+    "text": "What happens when a block completes?",
+    "intent": "execution",
+    "response": "When marked COMPLETE, actual duration and delay minutes are recorded, asset status is restored to Available, and learning insights are logged."
+  },
+  {
+    "text": "How do I generate reports?",
+    "intent": "reports",
+    "response": "Navigate to the System Reports page, select department and report type, then export password-protected PDF or Excel summary reports."
+  },
+  {
+    "text": "Are reports password protected?",
+    "intent": "reports",
+    "response": "Yes, PDF reports are encrypted using official environment passwords to ensure data security for railway audit compliance."
+  },
+  {
+    "text": "Show analytics and KPIs",
+    "intent": "analytics",
+    "response": "The Analytics dashboard displays total blocks scheduled, average delay minutes, asset uptime percentages, and department workload splits."
+  },
+  {
+    "text": "What settings can I configure?",
+    "intent": "settings",
+    "response": "In Settings, you can configure AI optimization weights (safety, train buffer, resource synergy), confidence thresholds, and system preferences."
+  },
+  {
+    "text": "Thank you",
+    "intent": "thanks",
+    "response": "You are welcome! Let me know if you have any other questions regarding Indian Railways operations."
+  },
+  {
+    "text": "Thanks a lot",
+    "intent": "thanks",
+    "response": "Glad to help! Feel free to ask more questions about maintenance, planning, or schedules."
+  },
+  {
+    "text": "Goodbye",
+    "intent": "goodbye",
+    "response": "Goodbye! Have a productive day managing Indian Railways operations."
+  },
+  {
+    "text": "Bye for now",
+    "intent": "goodbye",
+    "response": "Farewell! I remain online whenever you need assistance with railway block planning."
+  },
+  {
+    "text": "asdfghjkl qwerty 12345",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "random text xyz",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "What is the weather in Delhi?",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "Tell me a joke",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "Who won the cricket match?",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "Hello assistant, can you help me?",
+    "intent": "greeting",
+    "response": "Hello! Yes, I am here to help you with maintenance, schedules, predictions, and railway block planning."
+  },
+  {
+    "text": "Show me active maintenance blocks",
+    "intent": "block_schedule",
+    "response": "You can view active and scheduled maintenance blocks on the Block Schedule page filtered by S&T, Track, or TRD departments."
+  },
+  {
+    "text": "Which department manages point machines?",
+    "intent": "asset",
+    "response": "Point Machines and interlocking systems are managed by the Signal & Telecommunication (S&T / SMMS) department."
+  },
+  {
+    "text": "Which department manages OHE cantilevers?",
+    "intent": "asset",
+    "response": "Overhead Equipment (OHE) cantilevers, traction substations, and 25kV power lines are managed by the Traction Distribution (TRD) department."
+  },
+  {
+    "text": "Which department manages track tamping?",
+    "intent": "engineering",
+    "response": "Track tamping, ballast cleaning, and rail renewals are managed by the Track Management (TMD / TMS) department."
+  },
+  {
+    "text": "What is SMMS?",
+    "intent": "maintenance",
+    "response": "SMMS stands for Signal and Telecommunication Maintenance Management System, handling S&T assets and block requests."
+  },
+  {
+    "text": "What is TMS?",
+    "intent": "maintenance",
+    "response": "TMS stands for Track Management System, covering civil engineering track inspections, ballast, and tamping operations."
+  },
+  {
+    "text": "What is TRD?",
+    "intent": "maintenance",
+    "response": "TRD stands for Traction Distribution department, managing 25kV AC overhead lines, substations, and electrical tower wagons."
+  },
+  {
+    "text": "What is the confidence threshold of AI model?",
+    "intent": "settings",
+    "response": "The AI Assistant operates with a minimum confidence threshold of 0.45 to ensure reliable responses and prevent hallucinated telemetry."
+  },
+  {
+    "text": "How do approvals work?",
+    "intent": "approval",
+    "response": "Maintenance requests move from Pending Review to Approved or Rejected status via officer review in the Approval Workflow page."
+  },
+  {
+    "text": "How does execution start?",
+    "intent": "execution",
+    "response": "When an approved block reaches its start time, clicking Start in Execution Monitor transitions status to IN_PROGRESS and updates asset availability."
+  },
+  {
+    "text": "What is the max block duration allowed?",
+    "intent": "ai_planner",
+    "response": "Maximum block duration is determined by section constraints (typically 2 to 6 hours) to minimize passenger train diversions."
+  },
+  {
+    "text": "How are affected trains calculated?",
+    "intent": "operations",
+    "response": "Affected trains are calculated based on scheduled express train frequency during the proposed block possession window."
+  },
+  {
+    "text": "What happens if there is a block conflict?",
+    "intent": "ai_planner",
+    "response": "The AI Planner flags conflicting blocks and recommends merged joint possessions or alternative non-overlapping time windows."
+  },
+  {
+    "text": "Tell me about Coimbatore Junction station",
+    "intent": "digital_twin",
+    "response": "Coimbatore Junction (CBE) is a major Southern Railway node with S&T point machine assets, track sections, and OHE lines."
+  },
+  {
+    "text": "Tell me about New Delhi station",
+    "intent": "digital_twin",
+    "response": "New Delhi (NDLS) is a high-density Northern Railway junction with intensive maintenance block requirements across multiple lines."
+  },
+  {
+    "text": "What is XGBoost used for?",
+    "intent": "ml_prediction",
+    "response": "XGBoost and Random Forest classifiers predict delay probabilities and risk levels for proposed maintenance block windows."
+  },
+  {
+    "text": "What is Random Forest used for?",
+    "intent": "ml_prediction",
+    "response": "Random Forest regression predicts expected delay minutes based on historical repair durations and technician counts."
+  },
+  {
+    "text": "How do I check system errors?",
+    "intent": "system_status",
+    "response": "You can inspect system logs, API status, and error logs on the System Monitor page or via `/api/system/error-logs`."
+  },
+  {
+    "text": "What is the 25-field planner contract?",
+    "intent": "ai_planner",
+    "response": "The 25-field contract standardizes Block Request, Asset, Train Operations, Resource, and Block Constraint input data for AI scheduling."
+  },
+  {
+    "text": "What is the 26-field schedule contract?",
+    "intent": "block_schedule",
+    "response": "The 26-field schedule contract formats block ID, routing, timings, resource assignments, and execution outcome fields for UI display."
+  },
+  {
+    "text": "What is the 24-field digital twin contract?",
+    "intent": "digital_twin",
+    "response": "The 24-field Digital Twin contract specifies spatial identifiers, asset states, block status, train operations, and telemetry attributes."
+  },
+  {
+    "text": "Where is the data stored?",
+    "intent": "system_status",
+    "response": "Data is stored in Supabase PostgreSQL tables and static reference datasets inside `ml/data/`."
+  },
+  {
+    "text": "Can I export reports to Excel?",
+    "intent": "reports",
+    "response": "Yes, reports and analytics summaries can be exported as Excel spreadsheets or protected PDF documents."
+  },
+  {
+    "text": "How are health scores calculated?",
+    "intent": "asset",
+    "response": "Asset health score is calculated based on installation age, failure frequency, recent maintenance dates, and usage hours."
+  },
+  {
+    "text": "What is Kavach ATP?",
+    "intent": "engineering",
+    "response": "Kavach is Indian Railways' Automatic Train Protection system fitted on S&T assets and locomotives to prevent train collisions."
+  },
+  {
+    "text": "What is OHE?",
+    "intent": "maintenance",
+    "response": "OHE stands for Overhead Equipment, supplying 25kV AC electric power to electric locomotives and EMU trains."
+  },
+  {
+    "text": "What is a tamping machine?",
+    "intent": "engineering",
+    "response": "A tamping machine packs ballast under railway tracks to correct track alignment, level, and gauge for smooth train travel."
+  },
+  {
+    "text": "What is ballast cleaning?",
+    "intent": "engineering",
+    "response": "Ballast cleaning screens and cleans crushed stone ballast under tracks to ensure proper drainage and track elasticity."
+  },
+  {
+    "text": "How to contact system admin?",
+    "intent": "help",
+    "response": "You can reach system administrators through the System Monitor page or by submitting an escalation alert."
+  },
+  {
+    "text": "Is Supabase connected?",
+    "intent": "system_status",
+    "response": "Supabase PostgreSQL connection is healthy and active. Check health status at `/api/supabase-health`."
+  },
+  {
+    "text": "What is joint block possession?",
+    "intent": "ai_planner",
+    "response": "A joint block possession allows S&T, Track, and TRD departments to work simultaneously on the same section during a single window."
+  },
+  {
+    "text": "How do I clear chat history?",
+    "intent": "help",
+    "response": "Click the Clear button at the top right of the AI Assistant chat window to reset your conversation."
+  },
+  {
+    "text": "Appreciate your help",
+    "intent": "thanks",
+    "response": "Thank you! I am glad to assist in optimizing Indian Railways operations."
+  },
+  {
+    "text": "Have a good day",
+    "intent": "goodbye",
+    "response": "Have a great day! TRACKIQ AI remains available for any operational queries."
+  },
+  {
+    "text": "See you later",
+    "intent": "goodbye",
+    "response": "See you later! Feel free to return whenever you need block planning assistance."
+  },
+  {
+    "text": "foo bar baz 999",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "who is the prime minister",
+    "intent": "unknown",
+    "response": "I'm not fully sure what you mean. Please rephrase your question."
+  },
+  {
+    "text": "How does analytics help in block optimization?",
+    "intent": "analytics",
+    "response": "Analytics provides comparative metrics between planned duration and actual execution, identifying departmental bottlenecks and optimizing future block requests."
+  }
+]
